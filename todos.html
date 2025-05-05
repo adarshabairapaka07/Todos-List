@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="todos.css">
+
+  <script src="https://kit.fontawesome.com/a2e0b5fc65.js" crossorigin="anonymous"></script> <!-- FontAwesome for icons -->
+</head>
+<body>
+  <div class="todos-bg-container d-flex align-items-center justify-content-center">
+    <div class="container py-5">
+      <h1 class="todos-heading mb-4 text-center">My Todos</h1>
+
+      <div class="text-end mb-3">
+        <button class="btn btn-outline-secondary" id="themeToggleBtn">
+          <i class="fas fa-moon me-1"></i> Toggle Theme
+        </button>
+      </div>
+
+      <div class="card p-4 shadow-sm mb-4">
+        <h4 class="create-task-heading mb-3">
+          <i class="fas fa-plus-circle me-2"></i>Create New Task
+        </h4>
+        <div class="input-group mb-3">
+          <input type="text" id="todoUserInput" class="form-control" placeholder="What needs to be done?">
+          <button class="btn btn-primary" id="addTodoButton">
+            <i class="fas fa-plus"></i> Add
+          </button>
+        </div>
+      </div>
+
+      <h4 class="todo-items-heading mb-3">
+        <i class="fas fa-tasks me-2"></i>My Tasks
+      </h4>
+
+      <ul class="list-unstyled" id="todoItemsContainer"></ul>
+
+      <div class="text-end mt-4">
+        <button class="btn btn-success" id="saveTodoButton">
+          <i class="fas fa-save"></i> Save Todos
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="todos.js"></script>
+</body>
+</html>
